@@ -10,7 +10,7 @@ iOSで動作するマインスイーパーアプリです。
 現在クリア画面が表示されない場合があるバグを修正しています。
 
 # 開発の経緯
-AtCoderで出題されたminesweeper(url = https://atcoder.jp/contests/abc075/tasks/abc075_b)からアイデアを受けて作成しました。<br/>
+AtCoderで出題された[minesweeper](https://atcoder.jp/contests/abc075/tasks/abc075_b)からアイデアを受けて作成しました。<br/>
 該当の問題は爆弾の数の表示のみですが、競プロ定番の深さ優先探索を使って開くマスを走査しています。
 
 # 使用技術
