@@ -17,7 +17,7 @@ AtCoderで出題された[minesweeper](https://atcoder.jp/contests/abc075/tasks/
 + Swift 5.10
 + XCode 16.1
 
-#操作方法
+# 操作方法
 + startをタップで開始。
 + 画面下部のボタンが"open squares"の間、タップでマスを開く。
 + 画面下部のボタンが"place flags"の間、タップでマスに旗を配置。
