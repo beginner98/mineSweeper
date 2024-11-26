@@ -33,7 +33,7 @@ func generateField(field: inout [[square]], gameState: inout Bool) {
     var nums = Array(0 ..< 81)
     nums.shuffle()
     //マスに爆弾を配置
-    for i in 0...0{
+    for i in 0...17{
         let y = nums[i] / 9
         let x = nums[i] % 9
         field[y][x].mine = true
@@ -61,7 +61,7 @@ func clearGame(field: inout [[square]], gameState: inout Bool) {
 func openSquare(field: inout [[square]], x: Int, y: Int){
     field[y][x].state=true
     openCount+=1
-    if openCount==81{
+    if openCount==63{
         clearGame(field: &field, gameState: &gameState)
         return
     }
