@@ -26,8 +26,8 @@ struct ContentView: View {
     }
 
     func stopTimer() {
-            timer?.invalidate()  // タイマーを無効化
-            timer = nil           // タイマーを解放
+            timer?.invalidate()
+            timer = nil
     }
 
             var body: some View {
@@ -108,27 +108,35 @@ struct ContentView: View {
                         if gameState{tool.toggle()}}, label: {
                         if !tool{
                             VStack{
-                                Text("open squares / place flags")
-                                Text("you are on")
+                                Text("open／flag")
                                     .font(.title2)
-                                Text("open squares")
-                                        .font(.title)
+                                HStack{
+                                    Text("now:   ")
+                                    Image(systemName: "lock.open")
+                                        .font(.system(size: 40))
                                 }
+                                .font(.title)
+                            }
                             .foregroundColor(.black)
                             .background(Color.white)
                             .padding(.all)
+                            .frame(width: 240, height: 100)
                             .border(Color.black)
                         }
                         else{
                             VStack{
-                                Text("open squares / place flags")
-                                Text("you are on")
+                                Text("open／flag")
                                     .font(.title2)
-                                Text("place flags")
-                                    .font(.title)
+                                HStack{
+                                    Text("now:   ")
+                                    Image(systemName: "flag")
+                                        .font(.system(size: 40))
+                                }
+                                .font(.title)
                             }
                             .foregroundColor(.white)
                             .padding(.all)
+                            .frame(width: 240, height: 100)
                             .background(Color.black)
                             }
                     })
